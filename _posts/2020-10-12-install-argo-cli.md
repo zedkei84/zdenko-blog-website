@@ -2,7 +2,7 @@
 date: 2020-10-12 00:00:00
 title: Install Argo CLI
 categories:
-  - deployment
+  - kubernetes
 description: Install Argo CLI on your local PC
 type: Document
 ---
