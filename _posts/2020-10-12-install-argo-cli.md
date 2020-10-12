@@ -1,9 +1,9 @@
 ---
-date: 2017-01-16
-title: Azure
+date: 2020-10-12 00:00:00
+title: Install Argo CLI
 categories:
   - deployment
-description: "Deploy your Jekyll site to Azure"
+description: Install Argo CLI on your local PC
 type: Document
 ---
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.
