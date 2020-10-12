@@ -1,5 +1,5 @@
 ---
-date: 2017-01-15
+date: 2017-01-15 00:00:00
 title: Client editable Jekyll sites
 video_id: _iH8f5alzWA
 description: Have non-technical people update Jekyll sites
@@ -7,13 +7,14 @@ categories:
   - deployment
 resources:
   - name: Source code
-    link: https://github.com/CloudCannon/creative-jekyll-theme/
+    link: 'https://github.com/CloudCannon/creative-jekyll-theme/'
   - name: CloudCannon
-    link: https://cloudcannon.com
+    link: 'https://cloudcannon.com'
 type: Video
 set: getting-started
 set_order: 1
 ---
+
 Many people don’t use Jekyll for client projects as non-developers would traditionally have to learn HTML, Markdown and Liquid to update content. In this tutorial, we give non-developers an easy way to update Jekyll sites with [CloudCannon](https://cloudcannon.com).
 
 ## What is CloudCannon?
@@ -26,19 +27,19 @@ To begin, we need to create a CloudCannon account and create our first site. Hea
 
 Enter your details into the sign up form:
 
-Once we've signed up we're taken to our dashboard. Click *Create Site*:
+Once we've signed up we're taken to our dashboard. Click *Create Site*\:
 
-Enter a name for the site. I'm going to use the site from the [Converting a static site to Jekyll](/jekyll-casts/converting-a-static-site-to-jekyll/) cast so I'll call it *Creative*:
+Enter a name for the site. I'm going to use the site from the [Converting a static site to Jekyll](/jekyll-casts/converting-a-static-site-to-jekyll/) cast so I'll call it *Creative*\:
 
 This creates the site and gives us options for uploading our files. If you'd like to use the same site I'm using you can download it [here](https://github.com/CloudCannon/creative-jekyll-theme/archive/master.zip).
 
 There's a number of ways of getting your files on CloudCannon. To keep things simple we're just going to upload a folder from our local computer. Click on the folder icon. *Note: folder upload is only supported in Chrome*
 
-Navigate to your Jekyll site and click *Upload*:
+Navigate to your Jekyll site and click *Upload*\:
 
 Once the files upload, CloudCannon builds the site:
 
-We can view the live site by clicking on the _.cloudvent.net_ URL in the sidebar:
+We can view the live site by clicking on the *.cloudvent.net* URL in the sidebar:
 
 ## Editables
 
@@ -46,7 +47,7 @@ Next, we need to do is to define areas in our HTML which non-developers can upda
 
 Open `index.html` in CloudCannon and add a class of `editable` to the `h1` and `p` inside `<div class="header-content-inner">` so it becomes the following:
 
-~~~ html
+~~~html
 <div class="header-content-inner">
   <h1 class="editable">Your Favorite Source of Free Bootstrap Themes</h1>
   <hr>
@@ -65,7 +66,7 @@ Our non-developer can view their live site at your-site.cloudvent.net (or you ca
 
 Once the client logs in they see their site with colored boxes highlighting the editable regions. The client can update content directly inline by clicking on text:
 
-By clicking _Collections_ in the sidebar the client can manage their blog posts:
+By clicking *Collections* in the sidebar the client can manage their blog posts:
 
 Editing posts happens in the [Content Editor](https://docs.cloudcannon.com/editing/content-editor/) which is a rich text editor for Markdown. The client can also manage all the front matter data on the page using an easy-to-use editor:
 
