@@ -6,13 +6,17 @@ categories:
 description: Jekyll template for digital agencies
 type: Document
 ---
-This is a kubectl plugin for [Kubernetes OpenID Connect (OIDC) authentication](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#openid-connect-tokens), also known as `kubectl oidc-login`.
+`kubelogin` is a kubectl plugin for [Kubernetes OpenID Connect (OIDC) authentication](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#openid-connect-tokens), also known as `kubectl oidc-login`.
+
 Kubelogin is designed to run as a [client-go credential plugin](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#client-go-credential-plugins).
+
 When you run kubectl, kubelogin opens the browser and you can log in to the provider.
+
 Then kubelogin gets a token from the provider and kubectl access Kubernetes APIs with the token.
+
 Take a look at the diagram:
 
-![Diagram of the credential plugin](https://github.com/int128/kubelogin/blob/master/docs/credential-plugin-diagram.svg)
+![Diagram of the credential plugin](https://github.com/int128/kubelogin/blob/master/docs/credential-plugin-diagram.svg?raw=true)
 
 ## How to install
 
