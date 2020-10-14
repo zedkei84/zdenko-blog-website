@@ -1,8 +1,8 @@
 ---
-date: 2017-01-16 00:00:00
-title: Urban
+date: 2020-10-14 00:00:00
+title: Install kubelogin on WSL
 categories:
-  - themes
+  - kubernetes
 description: Jekyll template for digital agencies
 type: Document
 ---
