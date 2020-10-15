@@ -1,10 +1,10 @@
 ---
-date: 2020-10-14 00:00:00
+date: 2020-10-15 00:00:00
 title: Install kubelogin on WSL
 categories:
   - kubernetes
 description: Jekyll template for digital agencies
-type: Document
+type: Video
 ---
 `kubelogin` is a kubectl plugin for [Kubernetes OpenID Connect (OIDC) authentication](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#openid-connect-tokens), also known as `kubectl oidc-login`.
 
