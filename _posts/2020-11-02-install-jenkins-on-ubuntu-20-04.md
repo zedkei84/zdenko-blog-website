@@ -1,10 +1,10 @@
 ---
-date: 2020-10-15 00:00:00
-title: Install kubelogin on WSL
+date: 2020-11-02 15:00:00
+title: Install Jenkins on Ubuntu 20.04
 categories:
-  - kubernetes
-description: Jekyll template for digital agencies
-type: Video
+  - jenkins
+description: How to install Jenkins on Ubuntu 20.04
+type: Document
 ---
 ## What is Jenkins?
 
