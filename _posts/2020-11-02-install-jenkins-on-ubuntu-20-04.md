@@ -15,6 +15,13 @@ Jenkins can be installed through native system packages, Docker, or even run sta
 ### Prerequisites
 
  - JAVA installed
+ - Minimum hardware requirements:
+  - 256 MB of RAM
+  - 1 GB of drive space (although 10 GB is a recommended minimum if running Jenkins as a Docker container)
+
+ - Recommended hardware configuration for a small team:
+  - 1 GB+ of RAM
+  - 50 GB+ of drive space
 
 Check with:
 ~~~ bash
@@ -36,10 +43,10 @@ wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key 
 sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
 
 # update package list
-sudo apt update -y
+sudo apt-get update -y
 
 # install Jenkins
-sudo apt install jenkins -y
+sudo apt-get install jenkins -y
 
 # check Jenkins status
 sudo systemctl status jenkins
