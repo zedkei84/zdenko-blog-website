@@ -17,13 +17,11 @@ Jenkins can be installed through native system packages, Docker, or even run sta
 JAVA installed.
 
 Check with:
-
 ~~~ bash
 java -version
 ~~~
 
-If JAVA not installed, install it:
-
+If JAVA is not installed, install it:
 ~~~ bash
 sudo apt install openjdk-11-jre-headless -y
 ~~~
