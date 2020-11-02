@@ -14,7 +14,7 @@ Jenkins can be installed through native system packages, Docker, or even run sta
 
 ### Prerequisites
 
-JAVA installed.
+ - JAVA installed
 
 Check with:
 ~~~ bash
