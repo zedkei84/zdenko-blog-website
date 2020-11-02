@@ -14,7 +14,6 @@ Jenkins can be installed through native system packages, Docker, or even run sta
 
 ### Prerequisites
 
- - JAVA installed
  - Minimum hardware requirements:
    
     256 MB of RAM
@@ -26,6 +25,8 @@ Jenkins can be installed through native system packages, Docker, or even run sta
     1 GB+ of RAM
 
     50 GB+ of drive space
+
+ - JAVA installed
 
 Check with:
 ~~~ bash
