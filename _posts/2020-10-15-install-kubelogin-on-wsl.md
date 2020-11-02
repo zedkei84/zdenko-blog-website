@@ -6,26 +6,46 @@ categories:
 description: Jekyll template for digital agencies
 type: Video
 ---
-`kubelogin` is a kubectl plugin for [Kubernetes OpenID Connect (OIDC) authentication](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#openid-connect-tokens), also known as `kubectl oidc-login`.
+## What is Jenkins?
 
-Kubelogin is designed to run as a [client-go credential plugin](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#client-go-credential-plugins).
+Jenkins is a self-contained, open source automation server which can be used to automate all sorts of tasks related to building, testing, and delivering or deploying software.
 
-When you run kubectl, kubelogin opens the browser and you can log in to the provider.
+Jenkins can be installed through native system packages, Docker, or even run standalone by any machine with a Java Runtime Environment (JRE) installed.
 
-Then kubelogin gets a token from the provider and kubectl access Kubernetes APIs with the token.
+### Prerequisites
 
-Take a look at the diagram:
+JAVA installed.
 
-![Diagram of the credential plugin](https://github.com/int128/kubelogin/blob/master/docs/credential-plugin-diagram.svg?raw=true)
-
-## How to install
+Check with:
 
 ~~~ bash
-export KUBELOGIN_VERSION="v1.21.0"
+java -version
+~~~
 
-# Download the release and test the checksum
-wget -O ~/kubelogin.zip "https://github.com/int128/kubelogin/releases/download/$KUBELOGIN_VERSION/kubelogin_linux_amd64.zip"
-unzip ~/kubelogin.zip
-rm ~/kubelogin.zip
-mv ~/kubelogin /usr/local/bin/kubectl-oidc_login
+If JAVA not installed, install it:
+
+~~~ bash
+sudo apt install openjdk-11-jre-headless -y
+~~~
+
+## How to install Jenkins via its official repository
+
+~~~ bash
+# import Jenkins GPG key
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+
+# update APT sources.list with the Jenkins repository
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+# update package list
+sudo apt update -y
+
+# install Jenkins
+sudo apt install jenkins -y
+
+# check Jenkins status
+sudo systemctl status jenkins
+
+# start Jenkins, if not running
+sudo systemctl start jenkins
 ~~~
