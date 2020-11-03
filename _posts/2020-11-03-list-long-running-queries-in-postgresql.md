@@ -11,7 +11,7 @@ type: Document
 
 The following SQL query will list all SQL queries running for longer than 5 minutes.
 
-~~~sql
+```sql
 SELECT
   pid,
   now() - pg_stat_activity.query_start AS duration,
@@ -22,6 +22,4 @@ SELECT
 FROM pg_stat_activity
 WHERE (now() - pg_stat_activity.query_start) > interval '5 minutes'
 ORDER BY duration DESC;
-~~~
-
-&nbsp;
+```
